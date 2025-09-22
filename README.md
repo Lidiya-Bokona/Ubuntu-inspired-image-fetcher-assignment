@@ -8,19 +8,22 @@ and organizes it in a folder for later sharing.
 
 ---
 
-## Features
-- Prompts the user for an image URL  
-- Downloads the image using `requests`  
-- Saves it to a `Fetched_Images` directory  
-- Handles errors gracefully without crashing  
+## ✨ Features
+- 🖼️ Fetch multiple images at once (comma-separated URLs).
+- 📂 Saves images into a `Fetched_Images/` directory.
+- 🔒 Precautions against unsafe downloads:
+  - Only saves valid images (`Content-Type: image/*`).
+  - Rejects files larger than 10MB.
+- 🛡️ Prevents duplicates using SHA256 file hashing.
+- ✅ Handles network errors gracefully with clear messages.
 
 ---
 
 ## Usage
 1. Clone this repository  
    ```bash
-   git clone https://github.com/Lidiya-Bokona/Ubuntu-inspired-image-fetcher-assignment.git
-   cd Ubuntu-inspired-image-fetcher-assignment
+   git clone https://github.com/Lidiya-Bokona/Ubuntu_Requests.git
+   cd Ubuntu_Requests
 2. Run the script
     ```bash
     python ubuntu.py
